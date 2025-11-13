@@ -1,0 +1,16 @@
+.ex{
+    color: antiquewhite;
+    background-color :rgb(113, 43, 43);
+    border : 6px solid antiquewhite;
+    font-style: italic;
+    font-family : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 24px;
+    margin-top: 14px;
+
+    transition: color 0.8s ease, border-color 0.3s ease-in-out;
+}
+.ex:hover {
+    color: brown;
+    border-color: brown;
+    background-color: antiquewhite;
+}
