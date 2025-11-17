@@ -1,18 +1,38 @@
-# React + Vite
+# ⚛️ React Practice
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collection of React components and small projects built while practicing modern frontend development using **React + Vite**.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 1️⃣ Tech Stack
+- ⚛️ **React** (with Vite)
+- 🧠 **JavaScript (ES6+)**
+- 🎨 **CSS / TailwindCSS**
+- 🧩 **ESLint** for linting
+- ⚡ **HMR (Hot Module Reload)** for fast dev experience
 
-## React Compiler
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 2️⃣ Setup Instructions
 
-Note: This will impact Vite dev & build performances.
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/adityathakur-cse/React-Practice.git
+   cd React-Practice
+   
+2. **Install dependencies**
+   ```bash
+   npm install
+   
+3. **Run the development server**
+   ```bash
+   npm run dev
+   
+4. Open http://localhost:5173 in your browser 🚀
 
-## Expanding the ESLint configuration
+## 3️⃣ About
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   This repository contains my React practice projects, created to explore:
+- ⚙️ React Hooks (useState, useEffect, etc.)
+- 🧩 Component reusability
+- 📊 Props & State management
+- 🎛️ Event handling
+- 💅 Responsive UI and CSS styling
