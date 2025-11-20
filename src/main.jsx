@@ -25,6 +25,7 @@ import UseReducerExample from './useReducerExample.jsx'
 import UseRefExample from './UseRef/UseRefExample1.jsx'
 import UseRefExample2 from './UseRef/UseRefExample2.jsx'
 import ToggleState from './CustomHook/ToggleState.jsx'
+import { ControlledComp } from './FormHandling/ControlledComp.jsx'
 const firstele = <h2>This is my new element</h2>
 class Ucomponent extends React.Component{
   render(){
@@ -81,9 +82,10 @@ createRoot(document.getElementById('root')).render(
       <ProviderComp/>
       <ThemeProvider/>
     <UseReducerExample />
-    <UseRefExample/>
+    {/* <UseRefExample/> */}
     <UseRefExample2/>
     <ToggleState/>
+    <ControlledComp/>
   </StrictMode>,
 )
 
