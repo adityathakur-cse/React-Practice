@@ -9,8 +9,8 @@ const UseRefExample2 = () => {
         renderValue.current = renderValue.current+1;
     }, [val]);
   return (
-    <div className='border'><br></br>
-      <input type="text" placeholder='  Type here' ref={preRef} value={val} onChange={(a) => setValue(a.target.value)} className='outline-0 border-2 border-solid border-green-400'/>
+    <div className='bg-blue-900'><br></br>
+      <input type="text" placeholder='  Type here' ref={preRef} value={val} onChange={(a) => setValue(a.target.value)} className='outline-0 border-2 border-solid rounded-lg p-2 border-green-300'/>
       <h2>Current value : {val}</h2>
       <h2>Previous value : {preRef.current}</h2>
       <h2>Rendering number : {renderValue.current}</h2>

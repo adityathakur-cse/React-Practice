@@ -16,7 +16,7 @@ const UseReducerExample = () => {
     }
     const [cartState, dispatchCart] = useReducer(reducerCart, initialCartState);
     return (
-      <div className='bg-blue-700 p-2'>
+      <div className='bg-blue-600 p-2'>
         <h2>Cart : {cartState.count}</h2>
         <button onClick={() => dispatchCart({type:'addCart'})}>Add to Cart</button>
         <button onClick={() => dispatchCart({type:'removeCart'})}>Remove from Cart</button>
