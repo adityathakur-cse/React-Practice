@@ -9,3 +9,8 @@
 npm start
 npm install
 npm run dev
+
+
+#   Install Tailwind (using Vite)
+    npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init -p
