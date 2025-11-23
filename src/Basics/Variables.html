@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        class Student {
+            constructor(name, course){
+                this.name = name;
+                this.course = course;
+            }
+            info(){
+                return `I am ${this.name}, currently pursuing ${this.course}`;
+            }
+        }
+        class CollegeStudent extends Student {
+            constructor(name, course, college){
+                super(name, course); 
+                this.college = college;
+            }
+            newInfo(){
+                return `${this.info()} from ${this.college}`;
+            }
+        }
+        const student = new CollegeStudent("Aditya", "B. Tech", "LPU");
+        document.write(student.newInfo());
+    </script>
+</body>
+</html>

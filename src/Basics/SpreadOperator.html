@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+<body>
+    <script>
+
+    //SPREAD : it expands an iterable into individual elements. Commonly used for copying array objects, merging or passing elements to functions.
+        const arr1 = [1,2,3,4];
+        const arr2 = [...arr1, 5,6,7];
+        console.log(arr2);
+        const arr3 = [7,8,9];
+        const arr4 = [23,45,70];
+        const arr5 = [...arr3, ...arr4];
+        console.log(arr5);
+    
+    //COPY
+        const arr6 = [10,20,30,40,50];
+        console.log(arr6);
+        const arr = [...arr6];
+        arr.push(100);
+        console.log(arr);
+
+    //FUNCTIONS
+        function sum1(a,b,c,d){
+            return a+b+c+d;
+        }
+        const arr7 = [1,2,3,4];
+        console.log(sum1(...arr7));
+
+    //SPREADING OBJECTS
+        const person = {
+            name : 'Alice',
+            age : 30
+        }
+        const student = {state : 'Punjab', ...person};
+        console.log(student);
+        document.writeln(JSON.stringify(student));
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESTRUCTURING</title>
+</head>
+<body>
+    <script>
+    //ARRAY DESTRUCTURING
+        // const [x,y] = [10,20];
+        // console.log(x);
+        // console.log(y);
+
+        const arr = [1,2,3,4,5];
+        let [a,b,c,d] = arr;
+        console.log(a);
+        console.log(b);
+        // console.log(c);
+        console.log(d);
+
+    //DEFAULT VALUEs
+        const arr2 = [100,300];
+        const [a1,a2,a3 = 500] = arr2;
+        console.log(a1);
+        console.log(a2);
+        console.log(a3);
+
+    //SWAPPING VALUES
+        let x = 20, y = 40;
+        [x,y] = [y,x];
+        console.log(x);
+        console.log(y);
+
+    //OBJECT DESTRUCTURING 
+        const student = {
+            name : 'Alice',
+            age : '45',
+            subject : {
+                s1 : 'React',
+                s2 : 'Node'
+            }
+        }
+        const {age, name, occupation = 'business', subject : {s1 ,s2}} = student;
+        console.log(name);
+        console.log(age);
+        console.log(occupation);
+        console.log(s1);
+        console.log(s2);
+        
+    </script>
+</body>
+</html>

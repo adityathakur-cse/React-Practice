@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Operator</title>
+</head>
+<body>
+    <script>
+    //  REST : Collects multiple elements into a single array. Used in function parameters to
+    //  handle an indefinite number of arguments or in destructuring assignments
+        function add(...num){
+            return num.reduce((add,n) => add + n, 0);
+        }
+        console.log(add(1,2,3,4,5,6,7));
+
+        function info(a, ...rest){
+            console.log(a);
+            console.log(...rest);
+        }
+        info ('Hello', 'Ankit', 'Raj');
+
+    //  Destructuring with rest operator/
+        const [first, ...rest] = [1,2,3,4];
+        console.log(first);
+        console.log(rest);
+    </script>
+</body>
+</html>

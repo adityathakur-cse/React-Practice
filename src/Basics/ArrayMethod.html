@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+    <script>
+        // Array Methods : Streaming Data Processing
+        // concat(), every(), filter(), find(), forEach(), Array.from(), indexOf(), map(), reduce(), reverse()
+        let a1 = [1,2,3,4];
+        let a2 = [5,6,7,8];
+        let r1 = a1.concat(a2);
+        document.writeln(r1 + "<br>");
+
+        let a3 = [4,2,7,5,8,3];
+        let r2 = a3.every(n => n%2==0);
+        document.writeln(r2 + "<br>");
+
+        let r3 = a3.filter(n => n>4); //undefined it not found
+        document.writeln(r3 + "<br>");
+        
+        let r4 = a3.find(n => n>4); //-1 if not found
+        document.writeln(r4 + "<br>");
+
+        // let r5 = a3.forEach((n) => n+=2);
+        // document.writeln(r5)
+        a3.forEach((n) => {
+            n += 2;
+            document.writeln(n)
+        })
+        let str = "React";
+        let r5 = Array.from(str);
+        document.writeln("<br>" + r5);
+
+        // let a3 = [4,2,7,5,8,3];
+        document.writeln("<br>" + a3.indexOf(8)+ "<br>");
+
+        let r6 = a3.map(n => n*2);
+        document.writeln(r6 +"<br>");
+
+        document.writeln(a3.reverse()+"<br>");
+        let r7 = a3.reduce((add,n) => add+n,0);
+        document.writeln(r7);
+        
+        let students = [
+            {name: "Harsh", age: 22, marks: 65},
+            {name: "Aditya", age: 20, marks: 90},
+            {name: "Suraj", age: 23, marks: 85},
+            {name: "Dev", age: 21, marks: 70},
+            {name: "Raj", age: 19, marks: 80},
+        ]
+        // 1. Filter students who passed (marks >= 50)
+        let pass = students.filter(student => student.marks >= 50);
+        console.log("Passed Students:", pass);
+
+        // 2. Create a new array of marks after adding five bonus marks
+        let bonus = students.map(student => student.marks + 5);
+        console.log("Marks after adding bonus:", bonus);
+            
+        // 3. Find the first student who scored more than 90
+        let topStudent = students.find(student => student.marks > 90);
+        console.log("First student who scored more than 90:", topStudent ? topStudent.name : "No one");
+            
+        // 4. Calculate total marks of all students
+        let total = students.reduce((total, student) => total + student.marks, 0);
+        console.log("Total marks of all students:", total);
+            
+        // 5. Print congratulation message for every student
+        students.forEach(student => {
+            console.log(`Congratulations, ${student.name}! You scored ${student.marks} marks.`);
+        });
+
+    </script>
+</body>
+</html>

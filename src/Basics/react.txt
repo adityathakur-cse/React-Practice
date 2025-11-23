@@ -1,0 +1,11 @@
+    3 WAYS TO INSTALL REACT :
+1. npx create-react-app app-name
+
+2. npm install -g create react-app
+    create-react-app app-name
+
+3. npm create vite@latest myapp --template react
+
+npm start
+npm install
+npm run dev
