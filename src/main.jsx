@@ -26,6 +26,9 @@ import UseRefExample from './UseRef/UseRefExample1.jsx'
 import UseRefExample2 from './UseRef/UseRefExample2.jsx'
 import ToggleState from './CustomHook/ToggleState.jsx'
 import { ControlledComp } from './FormHandling/ControlledComp.jsx'
+import UncontrolledComp from './FormHandling/UncontrolledComp.jsx'
+import { ControlledComp1 } from './FormHandling/ControlledComp1.jsx'
+import FormValidation from './FormHandling/FormValidation.jsx'
 const firstele = <h2>This is my new element</h2>
 class Ucomponent extends React.Component{
   render(){
@@ -86,6 +89,9 @@ createRoot(document.getElementById('root')).render(
     <UseRefExample2/>
     <ToggleState/>
     <ControlledComp/>
+    <ControlledComp1/>
+    <UncontrolledComp/>
+    <FormValidation/>
   </StrictMode>,
 )
 
