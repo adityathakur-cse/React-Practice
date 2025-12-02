@@ -29,6 +29,7 @@ import { ControlledComp } from './FormHandling/ControlledComp.jsx'
 import UncontrolledComp from './FormHandling/UncontrolledComp.jsx'
 import { ControlledComp1 } from './FormHandling/ControlledComp1.jsx'
 import FormValidation from './FormHandling/FormValidation.jsx'
+import HTTPRequestComp from './HTTPRequestComp.jsx'
 const firstele = <h2>This is my new element</h2>
 class Ucomponent extends React.Component{
   render(){
@@ -92,6 +93,7 @@ createRoot(document.getElementById('root')).render(
     <ControlledComp1/>
     <UncontrolledComp/>
     <FormValidation/>
+    <HTTPRequestComp/>
   </StrictMode>,
 )
 
