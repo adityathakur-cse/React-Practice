@@ -29,7 +29,8 @@ import { ControlledComp } from './FormHandling/ControlledComp.jsx'
 import UncontrolledComp from './FormHandling/UncontrolledComp.jsx'
 import { ControlledComp1 } from './FormHandling/ControlledComp1.jsx'
 import FormValidation from './FormHandling/FormValidation.jsx'
-import HTTPRequestComp from './HTTPRequestComp.jsx'
+import HTTPRequestComp from './HTTPMethods/HTTPRequestComp.jsx'
+import HTTPRequestAxios from './HTTPMethods/HTTPRequestAxios.jsx'
 const firstele = <h2>This is my new element</h2>
 class Ucomponent extends React.Component{
   render(){
@@ -94,6 +95,7 @@ createRoot(document.getElementById('root')).render(
     <UncontrolledComp/>
     <FormValidation/>
     <HTTPRequestComp/>
+    <HTTPRequestAxios/>
   </StrictMode>,
 )
 
