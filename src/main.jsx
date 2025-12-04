@@ -31,6 +31,7 @@ import { ControlledComp1 } from './FormHandling/ControlledComp1.jsx'
 import FormValidation from './FormHandling/FormValidation.jsx'
 import HTTPRequestComp from './HTTPMethods/HTTPRequestComp.jsx'
 import HTTPRequestAxios from './HTTPMethods/HTTPRequestAxios.jsx'
+import ParentRouting from './Routing/ParentRouting.jsx'
 const firstele = <h2>This is my new element</h2>
 class Ucomponent extends React.Component{
   render(){
@@ -60,6 +61,7 @@ let versions = [1.1, 1.2, 1.3]
 createRoot(document.getElementById('root')).render(
   <StrictMode> 
     {/* <EventHandling /> */}
+    <ParentRouting/>
     <UseEffect/>
     <UseState />
     <InlineCSS />
