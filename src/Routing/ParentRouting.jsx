@@ -2,6 +2,7 @@ import React from 'react'
 import Home from './Home'
 import Contact from './Contact'
 import About from './About'
+import Default from './Default'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 const ParentRouting = () => {
   return (
@@ -12,6 +13,7 @@ const ParentRouting = () => {
         <div><Link to="/about">About</Link></div>
         <div><Link to="/contact">Contact</Link></div>
         <Routes>
+          <Route path="/" element={<Default />} />
           <Route path="/home" element={<Home/>}></Route>
           <Route path="/about" element={<About/>}></Route>
           <Route path="/contact" element={<Contact/>}></Route>
