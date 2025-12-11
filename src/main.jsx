@@ -32,6 +32,7 @@ import FormValidation from './FormHandling/FormValidation.jsx'
 import HTTPRequestComp from './HTTPMethods/HTTPRequestComp.jsx'
 import HTTPRequestAxios from './HTTPMethods/HTTPRequestAxios.jsx'
 import ParentRouting from './Routing/ParentRouting.jsx'
+import ShowRecipe from './Routing/ShowRecipe.jsx'
 const firstele = <h2>This is my new element</h2>
 class Ucomponent extends React.Component{
   render(){
@@ -62,6 +63,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode> 
     {/* <EventHandling /> */}
     <ParentRouting/>
+    <ShowRecipe/>
     <UseEffect/>
     <UseState />
     <InlineCSS />
