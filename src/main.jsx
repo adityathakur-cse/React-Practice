@@ -34,8 +34,10 @@ import HTTPRequestAxios from './HTTPMethods/HTTPRequestAxios.jsx'
 import ParentRouting from './Routing/ParentRouting.jsx'
 import ShowRecipe from './Routing/ShowRecipe.jsx'
 import { Provider } from 'react-redux'
-import { store } from './store.jsx'
-import CounterUI from './Redux/CounterUI.jsx'
+// import { store } from './store.jsx'
+import store1 from './store1.jsx'
+import TodoUI from './ReduxTodo/TodoUI'
+// import CounterUI from './Redux/CounterUI.jsx'
 const firstele = <h2>This is my new element</h2>
 class Ucomponent extends React.Component{
   render(){
@@ -64,10 +66,11 @@ let config = {
 let versions = [1.1, 1.2, 1.3]
 createRoot(document.getElementById('root')).render(
   <StrictMode> 
-    <Provider store={store}>
+    <Provider store={store1}>
       {/* <EventHandling /> */}
       <ParentRouting/>
-      <CounterUI/>
+      <TodoUI/>
+      {/* <CounterUI/> */}
       <ShowRecipe/>
       <UseEffect/>
       <UseState />
