@@ -33,6 +33,9 @@ import HTTPRequestComp from './HTTPMethods/HTTPRequestComp.jsx'
 import HTTPRequestAxios from './HTTPMethods/HTTPRequestAxios.jsx'
 import ParentRouting from './Routing/ParentRouting.jsx'
 import ShowRecipe from './Routing/ShowRecipe.jsx'
+import { Provider } from 'react-redux'
+import { store } from './store.jsx'
+import CounterUI from './Redux/CounterUI.jsx'
 const firstele = <h2>This is my new element</h2>
 class Ucomponent extends React.Component{
   render(){
@@ -61,45 +64,48 @@ let config = {
 let versions = [1.1, 1.2, 1.3]
 createRoot(document.getElementById('root')).render(
   <StrictMode> 
-    {/* <EventHandling /> */}
-    <ParentRouting/>
-    <ShowRecipe/>
-    <UseEffect/>
-    <UseState />
-    <InlineCSS />
-    <ExternalCSS />
-    <ModuleCSS />
-    <Food pizza="Italian" noodle="Chinese" pav="Indian" />
-    <TailwindCSS />
-    <Counter />
-    <DashboardComponent/>
-    <App />
-    {/* {firstele} */}
-    <Abc/> 
-    {/* During rendering dont change the component name 
-      2 Types of components 
-        a. Function components
-        b. Class components       */}
-        {/* <NewComponent/> */}
-    <JSXBasics/>
-    <FileComponent />
-    <Ucomponent/>
-    <LaptopComponent brand = "HP" color = "Black" con = {config} v = {versions[0]} />
-    {/* <UniClassComp name = "LPU" /> */}
-    <StudentComp name = "Ranbir" state = "JH" age = {28} course = "ReactJS" />
-      <WithoutUseContext/>
-      <ProviderComp/>
-      <ThemeProvider/>
-    <UseReducerExample />
-    {/* <UseRefExample/> */}
-    <UseRefExample2/>
-    <ToggleState/>
-    <ControlledComp/>
-    <ControlledComp1/>
-    <UncontrolledComp/>
-    <FormValidation/>
-    <HTTPRequestComp/>
-    <HTTPRequestAxios/>
+    <Provider store={store}>
+      {/* <EventHandling /> */}
+      <ParentRouting/>
+      <CounterUI/>
+      <ShowRecipe/>
+      <UseEffect/>
+      <UseState />
+      <InlineCSS />
+      <ExternalCSS />
+      <ModuleCSS />
+      <Food pizza="Italian" noodle="Chinese" pav="Indian" />
+      <TailwindCSS />
+      <Counter />
+      <DashboardComponent/>
+      <App />
+      {/* {firstele} */}
+      <Abc/> 
+      {/* During rendering dont change the component name 
+        2 Types of components 
+          a. Function components
+          b. Class components       */}
+          {/* <NewComponent/> */}
+      <JSXBasics/>
+      <FileComponent />
+      <Ucomponent/>
+      <LaptopComponent brand = "HP" color = "Black" con = {config} v = {versions[0]} />
+      {/* <UniClassComp name = "LPU" /> */}
+      <StudentComp name = "Ranbir" state = "JH" age = {28} course = "ReactJS" />
+        <WithoutUseContext/>
+        <ProviderComp/>
+        <ThemeProvider/>
+      <UseReducerExample />
+      {/* <UseRefExample/> */}
+      <UseRefExample2/>
+      <ToggleState/>
+      <ControlledComp/>
+      <ControlledComp1/>
+      <UncontrolledComp/>
+      <FormValidation/>
+      <HTTPRequestComp/>
+      <HTTPRequestAxios/>
+    </Provider>
   </StrictMode>,
 )
 
